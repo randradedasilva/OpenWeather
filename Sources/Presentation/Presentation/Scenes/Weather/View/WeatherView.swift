@@ -118,9 +118,20 @@ class WeatherView: UIView, CodeView, Reusable {
         view.addSubview(self.tableView)
         view.addSubview(self.stackView)
         view.addSubview(self.forecastLabel)
-        view.addSubview(self.temperatureMinLabel)
-        view.addSubview(self.temperatureMaxLabel)
+        view.addSubview(self.temperatureStackView)
         return view
+    }()
+    
+    private lazy var temperatureStackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .horizontal
+        stackView.alignment = .center
+        stackView.distribution = .fill
+        stackView.spacing = 10
+        stackView.addArrangedSubview(self.temperatureMaxLabel)
+        stackView.addArrangedSubview(self.temperatureMinLabel)
+        return stackView
     }()
     
     //MARK: Public Properties
@@ -144,26 +155,20 @@ class WeatherView: UIView, CodeView, Reusable {
         mainView.translatesAutoresizingMaskIntoConstraints = false
         stackView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 0).isActive = true
         stackView.rightAnchor.constraint(equalTo: self.rightAnchor,constant: 0).isActive = true
-        stackView.topAnchor.constraint(equalTo: self.topAnchor,constant: 150).isActive = true
-        
+        stackView.centerYAnchor.constraint(equalTo: self.centerYAnchor,constant: -40).isActive = true
+      
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 0).isActive = true
         imageView.leftAnchor.constraint(equalTo: self.leftAnchor,constant: 0).isActive = true
         imageView.rightAnchor.constraint(equalTo: self.rightAnchor,constant: 0).isActive = true
         imageView.bottomAnchor.constraint(equalTo: self.bottomAnchor,constant: 0).isActive = true
         
-        forecastLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 0).isActive = true
         forecastLabel.leftAnchor.constraint(equalTo: self.leftAnchor,constant: 20).isActive = true
-        forecastLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor,constant: 200).isActive = true
+        forecastLabel.bottomAnchor.constraint(equalTo: self.tableView.topAnchor,constant: 0).isActive = true
         
-        temperatureMinLabel.rightAnchor.constraint(equalTo: self.rightAnchor,constant: -20).isActive = true
-        temperatureMinLabel.bottomAnchor.constraint(equalTo: self.forecastLabel.bottomAnchor).isActive = true
-        temperatureMinLabel.topAnchor.constraint(equalTo: self.forecastLabel.topAnchor).isActive = true
-        
-        temperatureMaxLabel.leftAnchor.constraint(equalTo: self.temperatureMinLabel.leftAnchor,constant: -60).isActive = true
-        temperatureMaxLabel.bottomAnchor.constraint(equalTo: self.forecastLabel.bottomAnchor).isActive = true
-        temperatureMaxLabel.topAnchor.constraint(equalTo: self.forecastLabel.topAnchor).isActive = true
-        
+        temperatureStackView.bottomAnchor.constraint(equalTo: self.tableView.topAnchor,constant: 0).isActive = true
+        temperatureStackView.rightAnchor.constraint(equalTo: self.rightAnchor,constant: -20).isActive = true
+
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.heightAnchor.constraint(equalToConstant: 200).isActive = true
         tableView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
