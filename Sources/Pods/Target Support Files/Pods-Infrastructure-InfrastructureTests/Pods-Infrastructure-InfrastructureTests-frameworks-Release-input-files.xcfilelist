@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-Infrastructure-InfrastructureTests/Pods-Infrastructure-InfrastructureTests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/CodableAlamofire/CodableAlamofire.framework
+${BUILT_PRODUCTS_DIR}/Domain/Domain.framework
+${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework
+${BUILT_PRODUCTS_DIR}/Quick/Quick.framework

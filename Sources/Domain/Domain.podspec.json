@@ -1,0 +1,26 @@
+{
+    "authors": [
+        "rodrigoandradesilva@icloud.com"
+    ],
+    "dependencies": {
+        "Quick": [
+            "= 2.2.0"
+        ],
+        "Nimble": [
+            "= 8.0.5"
+        ]
+    },
+    "homepage": "https://github.com/Rodrigo Andrade/OpenWeather",
+    "license": "All rights reserved.",
+    "name": "Domain",
+    "platforms": {
+        "ios": "13.0"
+    },
+    "resources": "Domain/**/*.json",
+    "source": {
+        "git": "https://github.com/Rodrigo Andrade/OpenWeather"
+    },
+    "source_files": "Domain/**/*.swift",
+    "summary": "Domain",
+    "version": "1.0.0"
+}

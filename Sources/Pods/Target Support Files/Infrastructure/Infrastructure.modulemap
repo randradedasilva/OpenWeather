@@ -1,0 +1,6 @@
+framework module Infrastructure {
+  umbrella header "Infrastructure-umbrella.h"
+
+  export *
+  module * { export * }
+}

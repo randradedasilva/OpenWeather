@@ -1,0 +1,35 @@
+{
+  "authors": [
+    "rodrigoandradesilva@icloud.com"
+  ],
+  "dependencies": {
+    "Domain": [
+
+    ],
+    "CodableAlamofire": [
+      "= 1.2.0"
+    ],
+    "Alamofire": [
+      "= 5.0.2"
+    ],
+    "Quick": [
+      "= 2.2.0"
+    ],
+    "Nimble": [
+      "= 8.0.5"
+    ]
+  },
+  "homepage": "https://github.com/Rodrigo Andrade/OpenWeather",
+  "license": "All rights reserved.",
+  "name": "Infrastructure",
+  "platforms": {
+    "ios": "13.0"
+  },
+  "resources": "Infrastructure/**/*.json",
+  "source": {
+    "git": "https://github.com/Rodrigo Andrade/OpenWeather"
+  },
+  "source_files": "Infrastructure/**/*.swift",
+  "summary": "Infrastructure",
+  "version": "1.0.0"
+}

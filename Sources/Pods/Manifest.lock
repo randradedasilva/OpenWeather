@@ -1,0 +1,62 @@
+PODS:
+  - Alamofire (5.0.2)
+  - CodableAlamofire (1.2.0):
+    - Alamofire (~> 5.0.0-rc.3)
+  - Domain (1.0.0):
+    - Nimble (= 8.0.5)
+    - Quick (= 2.2.0)
+  - Infrastructure (1.0.0):
+    - Alamofire (= 5.0.2)
+    - CodableAlamofire (= 1.2.0)
+    - Domain
+    - Nimble (= 8.0.5)
+    - Quick (= 2.2.0)
+  - Nimble (8.0.5)
+  - Quick (2.2.0)
+  - Reusable (4.1.0):
+    - Reusable/Storyboard (= 4.1.0)
+    - Reusable/View (= 4.1.0)
+  - Reusable/Storyboard (4.1.0)
+  - Reusable/View (4.1.0)
+  - SDWebImage (5.5.2):
+    - SDWebImage/Core (= 5.5.2)
+  - SDWebImage/Core (5.5.2)
+
+DEPENDENCIES:
+  - Alamofire (= 5.0.2)
+  - CodableAlamofire (= 1.2.0)
+  - Domain (from `./Domain/`)
+  - Infrastructure (from `./Infrastructure/`)
+  - Nimble (= 8.0.5)
+  - Quick (= 2.2.0)
+  - Reusable (= 4.1.0)
+  - SDWebImage (= 5.5.2)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CodableAlamofire
+    - Nimble
+    - Quick
+    - Reusable
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  Domain:
+    :path: "./Domain/"
+  Infrastructure:
+    :path: "./Infrastructure/"
+
+SPEC CHECKSUMS:
+  Alamofire: 3ba7a4db18b4f62c4a1c0e1cb39d7f3d52e10ada
+  CodableAlamofire: 0b801d98d9f290ea05479b34f082012adbff9403
+  Domain: 1ec767a6427983af74e7529bf2e0c576c796996b
+  Infrastructure: ba06172ca0ba134d484068de8bce02aba210d091
+  Nimble: 4ab1aeb9b45553c75b9687196b0fa0713170a332
+  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
+  Reusable: 82be188f29d96dc5eff0db7b2393bcc08d2cdd5b
+  SDWebImage: 4d5c027c935438f341ed33dbac53ff9f479922ca
+
+PODFILE CHECKSUM: 39ea5dccd2e9443e377cab0a8b31d40586c54e01
+
+COCOAPODS: 1.9.1
